@@ -75,8 +75,8 @@ class DetailsViewController: UIViewController {
     }
     
 
-    
-    // MARK: - read Input Values
+    //read data from form for save action
+    //MARK: - reafctor in case
     func readInputs() -> [String : Any] {
         
         var jsonObject: [String: Any]  = [
@@ -117,7 +117,7 @@ class DetailsViewController: UIViewController {
     }
     
     
-    //MARK: - set form Input Values
+    //set values and prepare page for EDIT
     func setInputs(inputTransformerValues : Transformer) {
         
         nameText.text = inputTransformerValues.name

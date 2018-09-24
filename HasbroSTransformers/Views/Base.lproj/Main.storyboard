@@ -634,10 +634,15 @@
                                 <color key="textColor" red="0.2261243657" green="0.21753191890000001" blue="0.99942404029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Md3-3n-cPP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Md3-3n-cPP">
                                 <rect key="frame" x="10" y="135.5" width="355" height="526.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">The basic rules of the battle are:
+                                <mutableString key="text">Green background = Winner
+Gray Background = Loser
+Purple Background = tie
+
+
+ The basic rules of the battle are:
 ● The teams should be sorted by rank and faced off one on one against each other in order to determine a victor, the loser is eliminated
 ● A battle between opponents uses the following rules:
 	○ If any fighter is down 4 or more points of courage and 3 or more points of strength compared to their opponent, the opponent automatically wins the face-off regardless of overall rating (opponent has ran away)
@@ -650,6 +655,14 @@ Special rules
 ● Any Transformer named Optimus Prime or Predaking wins his fight automatically regardless of
 any other criteria
 ● In the event either of the above face each other (or a duplicate of each other), the game immediately ends with all competitors destroyed
+ For example, given the following input:
+Soundwave, D, 8,9,2,6,7,5,6,10
+Bluestreak, A, 6,6,7,9,5,2,9,7
+Hubcap: A, 4,4,4,4,4,4,4,4
+ The output should be :
+1 battle
+Winning team (Decepticons): Soundwave
+Survivors from the losing team (Autobots): Hubcap
 </mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
